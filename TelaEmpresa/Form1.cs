@@ -16,16 +16,19 @@ namespace TelaEmpresa
         Consultar con;
         Atualizar atu;
         Excluir   exc;
-
+        DAO    consul;
 
         public Form1()
         {
             InitializeComponent();
-            cad = new Cadastrar();
-            con = new Consultar();
-            atu = new Atualizar();
-            exc = new Excluir();
+
+            cad    = new Cadastrar();
+            con    = new Consultar();
+            atu    = new Atualizar();
+            exc    = new Excluir();
+            consul = new DAO();
         }// fim do construtor
+        
 
 
         private void label6_Click(object sender, EventArgs e)
@@ -40,7 +43,7 @@ namespace TelaEmpresa
 
         private void button2_Click(object sender, EventArgs e)
         {
-            con.ShowDialog();
+            con.ShowDialog();// abre tela 
         }// consultar
 
         private void button3_Click(object sender, EventArgs e)

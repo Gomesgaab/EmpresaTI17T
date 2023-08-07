@@ -42,24 +42,26 @@
             this.label6.Size = new System.Drawing.Size(193, 25);
             this.label6.TabIndex = 25;
             this.label6.Text = "Consultar Pessoa";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 62);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 37);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(403, 392);
+            this.dataGridView1.Size = new System.Drawing.Size(572, 524);
             this.dataGridView1.TabIndex = 26;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Consultar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(427, 466);
+            this.ClientSize = new System.Drawing.Size(596, 573);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label6);
-            this.MaximumSize = new System.Drawing.Size(443, 505);
-            this.MinimumSize = new System.Drawing.Size(443, 505);
+            this.MaximumSize = new System.Drawing.Size(612, 612);
+            this.MinimumSize = new System.Drawing.Size(612, 612);
             this.Name = "Consultar";
             this.Text = "Consultar";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
